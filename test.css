@@ -1,0 +1,27 @@
+#menu {
+    background-color: #205081;
+    width:100%;
+    float:left;
+    margin:10px 20px 10px 20px;
+    border: 0px;
+    display: inline;
+
+}
+
+#menu span {
+color:white;
+}
+
+#CreateButton {
+    background-color: #3b7fc4;
+    margin:10px 20px 10px 20px;
+
+
+}
+
+#SerchButton {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    margin:10px;
+
+}
