@@ -8,20 +8,31 @@
 
 }
 
-#menu span {
-color:white;
+#menu_list  {
+    color:white;
+   // display:inline;
+   // float: left;
+    //width: auto;
+    list-style:none;
+    display:inline-flex;
+    margin:10px;
 }
 
+#wix_home {
+//    display: inline;
+}
+
+#menu_list  li {
+    padding: 10px;
+    //margin:10px;
+}
 #CreateButton {
     background-color: #3b7fc4;
-    margin:10px 20px 10px 20px;
-
-
 }
 
 #SerchButton {
     background: rgba(0, 0, 0, 0.2);
     color: white;
-    margin:10px;
-
+    //width: 20%;
+  display: inline-block;
 }
