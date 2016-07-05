@@ -7,6 +7,42 @@ body {
     display: block;
 }
 
+#div_main_menu ul li ul{
+    visibility: hidden;
+    list-style: none;
+    position: absolute;
+    background-color: white;
+}
+
+#div_main_menu ul ul li {
+    display: block;
+}
+
+#div_main_menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+#div_main_menu ul li ul li a{
+    color: black;
+}
+
+#div_main_menu ul li ul li a {
+    border-bottom: solid 1px black;
+}
+
+#div_main_menu ul li ul li a::last-child{
+//    display:none;
+}
+
+
+
+#div_main_menu ul li:hover ul{
+    visibility: visible;
+    padding: 0px;
+
+}
+
 #menu_list  {
     color:white;
     list-style:none;
@@ -14,7 +50,7 @@ body {
     margin:10px;
 }
 
-#menu_list  li {
+#menu_list>li {
     padding: 10px;
 }
 
@@ -55,23 +91,19 @@ div#main_divs div h3{
 }
 
 div#main_divs div div h4 {
-    //-webkit-margin-before: 0em;
-    //-webkit-margin-after: 0em;
     margin-top: 0px;
     margin-bottom: 0px;
 
 }
 
 div#main_divs div p {
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 div#main_divs div a{
     text-decoration: none;
     color: #3b73af;
-    padding: 10px;
-
 }
 
 div#main_divs div a:hover{
@@ -94,20 +126,27 @@ div#introduction div {
     display: inline-block;
    vertical-align: top;
     border:0px;
-    float: right;
 }
 
+#new_to_jira {
+    font-size: 12px;
+}
 
 div#favorite_filters{
     display: inline-block;
     vertical-align:top;
 }
 
+div#favorite_filters div{
+    border: hidden;
+    border-top: 1px solid #ccc;
+    width:100%;
+    margin: 0px;
+}
+
 
 div#assigned_to_me{
     display:block;
-    //width: 100px;
-    //height:100px;
 }
 
 
@@ -118,10 +157,7 @@ div#assigned_to_me{
     position:absolute;
     bottom:0;
     width: 100%;
-
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
-
+    padding: 10px;
 }
 
 #footer ul li {
@@ -141,12 +177,9 @@ div#assigned_to_me{
 #footer ul {
     list-style:none;
     display: inline-flex;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
     text-align: center;
 
 }
-
 
 #footer ul li  a {
    text-decoration: none;
