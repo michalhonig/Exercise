@@ -8,7 +8,7 @@
 
 <body>
 
-<div id="div_main_menu">
+<nav id="div_main_menu">
     <a id = "wix_home" href="https://jira.wixpress.com/secure/MyJiraHome.jspa">
         <img src="https://michalhonig.github.io/Exercise/images/jira-logo-scaled.png">
     </a>
@@ -25,10 +25,9 @@
     </ul>
 
     <form id="SerchButton">
-        Search
-        <input type="text" name="serch_fileds">
+        <input placeholder="Search" type="text" name="serch_fileds">
     </form>
-</div>
+</nav>
 
 <h1> System Dashboard </h1>
 
@@ -36,17 +35,18 @@
     <div id="introduction">
         <h3>Introduction</h3>
         <img id="introduction_img" src="https://michalhonig.github.io/Exercise/images/64jira.png">
-        <h4> Welcome to JIRA</h4>
-        <h4>New to JIRA? Check out the <a href="https://confluence.atlassian.com/jira063/jira-user-s-guide-683542423.html"> JIRA User's Guide. </a></h4>
-        <div> </div>
+        <div>
+            <h4> Welcome to JIRA</h4>
+            <p>New to JIRA? Check out the <a href="https://confluence.atlassian.com/jira063/jira-user-s-guide-683542423.html"> JIRA User's Guide. </a></p>
+        </div>
     </div>
 
     <div id="favorite_filters">
         <h3>Favorite Filters</h3>
         <p> You have no favorite filters at the moment.</p>
+        <div></div>
         <a href="https://jira.wixpress.com/browse/WTS-31?jql=">Create Filter</a> |
         <a href="https://jira.wixpress.com/secure/ManageFilters.jspa"> Manage Filter</a>
-        </p>
     </div>
 
     <div id="assigned_to_me">

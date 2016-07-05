@@ -1,11 +1,15 @@
+body {
+    margin: 0px;
+}
+
 #div_main_menu {
     background-color: #205081;
-    width:100%;
-    float:left;
-    margin:10px 20px 10px 20px;
-    border: 0px;
-    display: inline;
-
+   // width:100%;
+   // float:left;
+   // margin:10px 20px 10px 20px;
+    //border: 0px;
+    display: block;
+clear: both;
 }
 
 #menu_list  {
@@ -27,84 +31,80 @@
     background: rgba(0, 0, 0, 0.2);
     color: white;
     display: inline-block;
+    //float:right;
+   // padding-right: 26px;
 }
 
 div#main_divs {
     margin: 10px;
 }
 
-div#introduction{
-   // margin:0px 0px 0px 20px;
-    border: 1px grey solid;
-//    float:left;
-    display: inline-block;
+div#main_divs div {
+   border: 1px grey solid;
+    margin: 10px;
 
+}
+div#main_divs div h3{
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #3b7fc4;
+    padding: 10px;
+    -webkit-margin-before: 0em;
+
+}
+div#main_divs div div h4 {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+
+}
+
+div#main_divs div p {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+div#main_divs div a{
+    text-decoration: none;
+    color: #3b73af;
+    padding: 10px;
+
+}
+
+div#main_divs div a:hover{
+    text-decoration: underline;
+}
+
+div#introduction{
+    border: 10px grey solid;
+    display: inline-block;
 }
 
 #introduction_img{
     height: 64px;
     width: 64px;
     display: inline-block;;
+    float: left;
 }
 
-div#introduction h3 {
-    display: block;
+div#introduction div {
+    display: inline-block;
    vertical-align: top;
-}
-
-
-div#introduction h4{
-    display: block;
-    vertical-align: baseline	;
+    border:0px;
+    float: right;
 }
 
 
 div#favorite_filters{
-  //  margin:0px 0px 0px 20px;
-    border: 1px grey solid;
-    //width: auto;
     display: inline-block;
     vertical-align:top;
-
-
 }
 
-#favorite_filters a{
-    text-decoration: none;
-    color: #3b73af;
-}
-
-
-#favorite_filters a:hover{
-    text-decoration: underline;
-//color:red;
-}
-
-div h3 {
-    color: #fff;
-    background-color: #3b7fc4;
-//border: 1px grey solid;
-}
 
 div#assigned_to_me{
- //   margin:0px 0px 0px 20px;
-    border: 1px grey solid;
     display:block;
-    //clear: both;
     width: auto;
 }
 
-div#activity_stream{
- //   margin:0px 0px 0px 20px;
-    border: 1px grey solid;
-   // clear: both;
-
-}
-div#activity_stream h2 {
-    color: #fff;
-    background-color: #3b7fc4;
-    //border: 1px grey solid;
-}
 
 #footer {
     color: #707070;
@@ -143,7 +143,6 @@ div#activity_stream h2 {
 
 }
 
-
 #attlasian_link  {
    text-decoration: none;
     color: #707070;
@@ -151,7 +150,5 @@ div#activity_stream h2 {
 }
 
 #footer  a:hover{
-   // text-decoration: none;
     color: blue;
-
 }
