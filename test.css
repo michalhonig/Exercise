@@ -4,12 +4,7 @@ body {
 
 #div_main_menu {
     background-color: #205081;
-   // width:100%;
-   // float:left;
-   // margin:10px 20px 10px 20px;
-    //border: 0px;
     display: block;
-clear: both;
 }
 
 #menu_list  {
@@ -31,31 +26,39 @@ clear: both;
     background: rgba(0, 0, 0, 0.2);
     color: white;
     display: inline-block;
-    //float:right;
-   // padding-right: 26px;
+}
+
+#system_dashboard {
+    margin: 10px;
 }
 
 div#main_divs {
     margin: 10px;
+
 }
 
 div#main_divs div {
-   border: 1px grey solid;
+    border: 1px grey solid;
     margin: 10px;
+    width: 45%;
 
 }
+
 div#main_divs div h3{
     color: #fff;
     font-size: 12px;
     font-weight: bold;
     background-color: #3b7fc4;
-    padding: 10px;
-    -webkit-margin-before: 0em;
+    padding: 5px;
+    margin-top: 0em;
 
 }
+
 div#main_divs div div h4 {
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
+    //-webkit-margin-before: 0em;
+    //-webkit-margin-after: 0em;
+    margin-top: 0px;
+    margin-bottom: 0px;
 
 }
 
@@ -63,6 +66,7 @@ div#main_divs div p {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
 }
+
 div#main_divs div a{
     text-decoration: none;
     color: #3b73af;
@@ -102,7 +106,8 @@ div#favorite_filters{
 
 div#assigned_to_me{
     display:block;
-    width: auto;
+    //width: 100px;
+    //height:100px;
 }
 
 
@@ -114,23 +119,34 @@ div#assigned_to_me{
     bottom:0;
     width: 100%;
 
-}
-
-#footer li {
-    display: inline;
-    text-decoration: none;
-    margin:10px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
 
 }
 
-#project_management_software  {
-    margin:1px;
+#footer ul li {
+    margin-left: 10px;
 }
 
-#footer li#jira_version{
-    margin:1px;
+#footer ul li::after {
+    content: "\b7";
+    margin-left: 10px;
+}
+
+#footer ul li:last-child:after {
+    display:none;
+}
+
+
+#footer ul {
+    list-style:none;
+    display: inline-flex;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    text-align: center;
 
 }
+
 
 #footer ul li  a {
    text-decoration: none;
@@ -143,12 +159,11 @@ div#assigned_to_me{
 
 }
 
-#attlasian_link  {
+#footer #attlasian_link  {
    text-decoration: none;
     color: #707070;
-
 }
 
-#footer  a:hover{
+#footer  #attlasian_link:hover{
     color: blue;
 }
