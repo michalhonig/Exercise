@@ -2,7 +2,7 @@ body {
     margin: 0px;
 }
 
-#div_main_menu {
+.nav_main_menu {
     background-color: #205081;
     display: block;
 }
@@ -26,6 +26,8 @@ body {
 #div_main_menu ul li ul li a {
     color: black;
 }
+
+
 
 .menu_list_header_list {
     color: black;
@@ -62,19 +64,13 @@ body {
     margin: 10px;
 }
 
-div#main_divs {
-    margin: 10px;
-
-}
-
-div#main_divs div {
+.contents-divs {
     border: 1px grey solid;
     margin: 10px;
     width: 45%;
-
 }
 
-div#main_divs div h3{
+.contents-divs h3{
     color: #fff;
     font-size: 12px;
     font-weight: bold;
@@ -84,28 +80,35 @@ div#main_divs div h3{
 
 }
 
-div#main_divs div div h4 {
+.contents-divs h4 {
     margin-top: 0px;
     margin-bottom: 0px;
 
 }
 
-div#main_divs div p {
+.contents-divs div p {
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-div#main_divs div a{
+.contents-divs a{
     text-decoration: none;
     color: #3b73af;
 }
 
-div#main_divs div a:hover{
+.contents-divs a:hover{
     text-decoration: underline;
 }
 
-div#introduction{
-    border: 10px grey solid;
+.divs-first-row {
+    vertical-align: top;
+}
+
+.block-divs {
+    display: block;
+}
+
+.inline-block-divs {
     display: inline-block;
 }
 
@@ -116,19 +119,8 @@ div#introduction{
     float: left;
 }
 
-div#introduction div {
-    display: inline-block;
-   vertical-align: top;
-    border:0px;
-}
-
-#new_to_jira {
+.small-p {
     font-size: 12px;
-}
-
-div#favorite_filters{
-    display: inline-block;
-    vertical-align:top;
 }
 
 div#favorite_filters div{
@@ -138,13 +130,7 @@ div#favorite_filters div{
     margin: 0px;
 }
 
-
-div#assigned_to_me{
-    display:block;
-}
-
-
-#footer {
+.footer-main-div {
     color: #707070;
     background: #f5f5f5;
     text-align: center;
@@ -154,43 +140,43 @@ div#assigned_to_me{
     padding: 10px;
 }
 
-#footer ul li {
+.footer-li {
     margin-left: 10px;
 }
 
-#footer ul li::after {
+.footer-li::after {
     content: "\b7";
     margin-left: 10px;
 }
 
-#footer ul li:last-child:after {
+.footer-li:last-child:after {
     display:none;
 }
 
 
-#footer ul {
+.footer-ul {
     list-style:none;
     display: inline-flex;
     text-align: center;
 
 }
 
-#footer ul li  a {
+.footer-li  a {
    text-decoration: none;
    color: #707070;
 }
 
-#footer ul li a:hover {
+.footer-li a:hover {
     text-decoration: underline;
     color: inherit;
 
 }
 
-#footer #attlasian_link  {
+ .none-link  {
    text-decoration: none;
     color: #707070;
 }
 
-#footer  #attlasian_link:hover{
+.none-link:hover{
     color: blue;
 }

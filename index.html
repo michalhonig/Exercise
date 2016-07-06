@@ -8,20 +8,23 @@
 
 <body>
 
-<nav id="div_main_menu">
-    <a id = "wix_home" href="https://jira.wixpress.com/secure/MyJiraHome.jspa">
-        <img src="https://michalhonig.github.io/Exercise/images/jira-logo-scaled.png">
-    </a>
+<nav class="nav_main_menu" id="div_main_menu">
+
+    <div>
+        <a id = "wix_home" href="https://jira.wixpress.com/secure/MyJiraHome.jspa">
+            <img src="https://michalhonig.github.io/Exercise/images/jira-logo-scaled.png">
+        </a>
+    </div>
 
     <ul id="menu_list">
-        <li>
+        <li class="main-menu-li">
             <a href="#">Dashboards </a>
             <ul class="dashboard_sub_menu">
                 <li><a href="#">View System Dashboards</a></li>
                 <li><a href="https://jira.wixpress.com/secure/ConfigurePortalPages!default.jspa">Manage Dashboards</a></li>
             </ul>
         </li>
-        <li>
+        <li class="main-menu-li">
             <a href="#">Projects</a>
             <ul class="dashboard_sub_menu">
                 <strong class="menu_list_header_list">Currnet Project</strong>
@@ -30,42 +33,42 @@
                 <li><a href="#">Manage Dashboards</a></li>
             </ul>
         </li>
-        <li>
+        <li class="main-menu-li">
             <a href="#">Issues</a>
             <ul class="dashboard_sub_menu">
                 <li><a href="#">View System Dashboards</a></li>
                 <li><a href="#">Manage Dashboards</a></li>
             </ul>
         </li>
-        <li>
+        <li class="main-menu-li">
             <a href="#">Aglie</a>
             <ul class="dashboard_sub_menu">
                 <li><a href="#">View System Dashboards</a></li>
                 <li><a href="#">Manage Dashboards</a></li>
             </ul>
         </li>
-        <li>
+        <li class="main-menu-li">
             <a href="#">Tests </a>
             <ul class="dashboard_sub_menu">
                 <li><a href="#">View System Dashboards</a></li>
                 <li><a href="#">Manage Dashboards</a></li>
             </ul>
         </li>
-        <li>
+        <li class="main-menu-li">
             <a href="#">BigGantt </a>
             <ul class="dashboard_sub_menu">
                 <li><a href="#">View System Dashboards</a></li>
                 <li><a href="#">Manage Dashboards</a></li>
             </ul>
         </li>
-        <li>
+        <li class="main-menu-li">
             <a href="#">eazyBI </a>
             <ul class="dashboard_sub_menu">
                 <li><a href="#">View System Dashboards</a></li>
                 <li><a href="#">Manage Dashboards</a></li>
             </ul>
         </li>
-        <li><button type="button" id="CreateButton">Create</button> </li>
+        <li class="main-menu-li"><button type="button" id="CreateButton">Create</button> </li>
     </ul>
 
     <form id="SerchButton">
@@ -75,54 +78,56 @@
 
 <h1 id ="system_dashboard"> System Dashboard </h1>
 
-<div id="main_divs">
-    <div id="introduction">
+<div class="content-main-div">
+    <div class="contents-divs inline-block-divs divs-first-row" id="introduction">
         <h3>Introduction</h3>
         <img id="introduction_img" src="https://michalhonig.github.io/Exercise/images/64jira.png">
         <div>
             <h4> Welcome to JIRA</h4>
-            <p id="new_to_jira">New to JIRA? Check out the <a href="https://confluence.atlassian.com/jira063/jira-user-s-guide-683542423.html"> JIRA User's Guide. </a></p>
+            <p class="small-p"id="new_to_jira">New to JIRA? Check out the <a href="https://confluence.atlassian.com/jira063/jira-user-s-guide-683542423.html"> JIRA User's Guide. </a></p>
         </div>
     </div>
-
-    <div id="favorite_filters">
+    <div class="contents-divs inline-block-divs divs-first-row" id="favorite_filters">
         <h3>Favorite Filters</h3>
         <p> You have no favorite filters at the moment.</p>
-        <div>
+        <div >
             <a href="https://jira.wixpress.com/browse/WTS-31?jql=">Create Filter</a> |
             <a href="https://jira.wixpress.com/secure/ManageFilters.jspa"> Manage Filter</a>
         </div>
     </div>
 
-    <div id="assigned_to_me">
+    <div class="contents-divs block-divs">
         <h3>Assigned to Me</h3>
         <p>There are no issues assigned to you.</p>
     </div>
 
-    <div id="activity_stream">
+    <div class="contents-divs block-divs">
         <h3>Activity Stream</h3>
-        <h4>jira</h4>
+        <h2>jira</h2>
     </div>
 </div>
 
-<footer id="footer">
-    <ul id="footer_ul">
-        <li> Atlassian JIRA
+<footer class= "footer-main-div">
+    <ul class="footer-ul">
+        <li class="footer-li"> Atlassian JIRA
             <a href="https://www.atlassian.com/software/jira"> <span>Project Management Software </span></a>
             <span>(v6.3.1#6329-sha1:7df76f1)</span>
         </li>
-        <li> <a href="https://jira.wixpress.com/secure/AboutPage.jspa"> <span> About JIRA </span> </a>
+
+        <li class="footer-li">
+            <a href="https://jira.wixpress.com/secure/AboutPage.jspa"><span> About JIRA </span> </a>
         </li>
 
 
-        <li> <a href="https://jira.wixpress.com/secure/ContactAdministrators!default.jspa"> <span> Report a problem </span></a></li>
+        <li class="footer-li">
+            <a href="https://jira.wixpress.com/secure/ContactAdministrators!default.jspa"> <span> Report a problem </span></a>
+        </li>
     </ul>
 
-    <br>
-
-    <img src="https://michalhonig.github.io/Exercise/images/64jira.png">
-    <a id="attlasian_link" href="http://www.atlassian.com/"><span id="body_atlassian">Atlassian</span></a>
-
+    <div >
+        <img src="https://michalhonig.github.io/Exercise/images/64jira.png">
+        <a class="none-link" id="attlasian_link" href="http://www.atlassian.com/"><span id="body_atlassian">Atlassian</span></a>
+    </div>
 </footer>
 
 </body>
