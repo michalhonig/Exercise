@@ -2,53 +2,46 @@ body {
     margin: 0px;
 }
 
-.nav_main_menu {
+.nav-main-menu {
     background-color: #205081;
     display: block;
 }
 
-#div_main_menu ul li ul{
-    visibility: hidden;
+.main-menu-ul {
     list-style: none;
-    position: absolute;
-    background-color: white;
+    display:inline-flex;
 }
 
-#div_main_menu ul ul li {
-    display: block;
+.main-menu-li {
+    padding:0px 10px 0px 10px;
 }
 
-#div_main_menu>ul li a{
+.main-menu-li-a {
     color: white;
     text-decoration: none;
 }
-
-#div_main_menu ul li ul li a {
-    color: black;
+.main-menu-second-level-ul {
+    position: absolute;
+    visibility: hidden;
 }
 
-
-
-.menu_list_header_list {
-    color: black;
-}
-
-#div_main_menu ul li:hover ul{
+.main-menu-li:hover ul {
+    position: absolute;
     visibility: visible;
-    padding: 0px;
-
 }
 
-#menu_list  {
-    color:white;
-    list-style:none;
-    display:inline-flex;
-    margin:10px;
+
+
+.main-menu-second-level-li-a{
+    color:black;
+    background-color: white;
 }
 
-#menu_list>li {
-    padding: 10px;
-}
+
+
+
+
+
 
 #CreateButton {
     background-color: #3b7fc4;
