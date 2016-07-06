@@ -18,24 +18,18 @@ body {
     display: block;
 }
 
-#div_main_menu ul li a{
+#div_main_menu>ul li a{
     color: white;
     text-decoration: none;
 }
 
-#div_main_menu ul li ul li a{
+#div_main_menu ul li ul li a {
     color: black;
 }
 
-#div_main_menu ul li ul li a {
-    border-bottom: solid 1px black;
+.menu_list_header_list {
+    color: black;
 }
-
-#div_main_menu ul li ul li a::last-child{
-//    display:none;
-}
-
-
 
 #div_main_menu ul li:hover ul{
     visibility: visible;
