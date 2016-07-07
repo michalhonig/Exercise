@@ -4,7 +4,8 @@ body {
 
 .nav-main-menu {
     background-color: #205081;
-    display: block;
+    display:    block;
+    position: relative;
 }
 
 .main-menu-ul {
@@ -12,6 +13,12 @@ body {
     display:inline-flex;
 }
 
+.elements-main-menu {
+    margin: 5px;
+    vertical-align: top;
+    padding: 0px;
+
+}
 .main-menu-li {
     padding:0px 10px 0px 10px;
 }
@@ -20,28 +27,29 @@ body {
     color: white;
     text-decoration: none;
 }
+
 .main-menu-second-level-ul {
     position: absolute;
     visibility: hidden;
+    list-style: none;
+    background-color: white;
+    color: black;
+    padding: 0px;
+    display: block;
+    height: auto;
 }
 
 .main-menu-li:hover ul {
-    position: absolute;
     visibility: visible;
+
 }
-
-
 
 .main-menu-second-level-li-a{
     color:black;
     background-color: white;
+    text-decoration: none;
+    padding: 3px;
 }
-
-
-
-
-
-
 
 #CreateButton {
     background-color: #3b7fc4;
