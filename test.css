@@ -1,77 +1,94 @@
-body {
-    margin: 0px;
-}
-
-.nav-main-menu {
+.main-menu {
     background-color: #205081;
-    display:    block;
+    display: block;
     position: relative;
 }
 
-.main-menu-ul {
+.main-menu > ul {
+    color: #ffffff;
     list-style: none;
-    display:inline-flex;
-}
-
-.elements-main-menu {
-    margin: 5px;
-    vertical-align: top;
-    padding: 0px;
-
-}
-.main-menu-li {
-    padding:0px 10px 0px 10px;
-}
-
-.main-menu-li-a {
-    color: white;
     text-decoration: none;
+    display: inline-flex;
 }
 
-.main-menu-second-level-ul {
-    position: absolute;
+.main-menu ul div {
+    display: inline-block;
+    cursor: auto;
+}
+
+.main-menu ul li {
+    padding-left: 10px;
+}
+
+.main-menu ul li div * {
     visibility: hidden;
     list-style: none;
     background-color: white;
-    color: black;
-    padding: 0px;
-    display: block;
-    height: auto;
+    color: blue;
+    position: absolute;
 }
 
-.main-menu-li:hover ul {
+.main-menu ul li:hover *{
     visibility: visible;
-
 }
 
-.main-menu-second-level-li-a{
-    color:black;
+
+.main-menu ul ul {
+    margin: 0px;
+    padding: 0px;
+}
+.main-menu ul ul li {
+padding-left: 0px;
+}
+
+.main-menu ul ul li {
     background-color: white;
-    text-decoration: none;
-    padding: 3px;
+    color: blue;
 }
 
-#CreateButton {
+.main-menu ul ul li  a{
+    text-decoration: none;
+    color: blue;
+}
+
+.main-menu li button {
     background-color: #3b7fc4;
 }
 
-#SerchButton {
-    background: rgba(0, 0, 0, 0.2);
-    color: white;
+.main-menu> form   {
     display: inline-block;
 }
 
-#system_dashboard {
-    margin: 10px;
+.main-menu> form  input{
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: inline-block;
+
 }
 
-.contents-divs {
+.contents .right-contens> div, .contents .left-contens> div{
     border: 1px grey solid;
     margin: 10px;
-    width: 45%;
 }
 
-.contents-divs h3{
+.contents >div{
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.introduction_inner {
+    display: inline-block;
+}
+
+
+
+.contents .right-contents {
+    float: right;
+}
+
+.contents h3{
     color: #fff;
     font-size: 12px;
     font-weight: bold;
@@ -81,37 +98,17 @@ body {
 
 }
 
-.contents-divs h4 {
+.contents h4 {
     margin-top: 0px;
     margin-bottom: 0px;
 
 }
 
-.contents-divs div p {
+.contents div p {
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.contents-divs a{
-    text-decoration: none;
-    color: #3b73af;
-}
-
-.contents-divs a:hover{
-    text-decoration: underline;
-}
-
-.divs-first-row {
-    vertical-align: top;
-}
-
-.block-divs {
-    display: block;
-}
-
-.inline-block-divs {
-    display: inline-block;
-}
 
 #introduction_img{
     height: 64px;
@@ -120,18 +117,38 @@ body {
     float: left;
 }
 
-.small-p {
-    font-size: 12px;
+
+.footer ul {
+    list-style:none;
+    display: inline-flex;
+    text-align: center;
+
 }
 
-div#favorite_filters div{
-    border: hidden;
-    border-top: 1px solid #ccc;
-    width:100%;
-    margin: 0px;
+.footer ul li  a {
+    text-decoration: none;
+    color: #707070;
 }
 
-.footer-main-div {
+.footer ul li a:hover {
+    text-decoration: underline;
+    color: inherit;
+
+}
+
+.atlassian-link  {
+    text-decoration: none;
+    color: #707070;
+}
+
+.atlassian-link:hover{
+    color: blue;
+}
+
+
+
+
+.footer {
     color: #707070;
     background: #f5f5f5;
     text-align: center;
@@ -141,43 +158,15 @@ div#favorite_filters div{
     padding: 10px;
 }
 
-.footer-li {
+.footer li {
     margin-left: 10px;
 }
 
-.footer-li::after {
+.footer li::after {
     content: "\b7";
     margin-left: 10px;
 }
 
-.footer-li:last-child:after {
+.footer li:last-child:after {
     display:none;
-}
-
-
-.footer-ul {
-    list-style:none;
-    display: inline-flex;
-    text-align: center;
-
-}
-
-.footer-li  a {
-   text-decoration: none;
-   color: #707070;
-}
-
-.footer-li a:hover {
-    text-decoration: underline;
-    color: inherit;
-
-}
-
- .none-link  {
-   text-decoration: none;
-    color: #707070;
-}
-
-.none-link:hover{
-    color: blue;
 }
