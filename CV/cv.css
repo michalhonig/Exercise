@@ -5,3 +5,7 @@ body {
 }
 
 
+label::after {
+    content: ": ";
+}
+
